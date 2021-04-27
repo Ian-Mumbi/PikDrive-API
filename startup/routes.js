@@ -6,7 +6,7 @@ const ordersRoute = require("../routes/orders");
 const suppliersProducts = require("../routes/supplier-product");
 
 module.exports = (app) => {
-  app.use("/api/test", testRoute);
+  app.use("/", testRoute);
   app.use("/api", productsRoute);
   app.use("/api", suppliersRoute);
   app.use("/api", ordersRoute);
